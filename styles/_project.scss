@@ -57,6 +57,9 @@ hr {
 
 #unicredit {
     padding-top: 0;
+    .card-body {
+        padding-top: 1.25rem;
+    }
     a {
         color: $primaryText;
         &:hover {
