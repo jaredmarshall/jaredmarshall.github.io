@@ -1,0 +1,17 @@
+footer {
+    padding-bottom: 40px;
+    background-color: $primaryColor;
+    color: $secondaryText;
+    p {
+        margin: 0;
+    }
+    .nav-link {
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: inherit;
+        }
+    }
+}

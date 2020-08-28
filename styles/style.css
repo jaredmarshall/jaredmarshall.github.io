@@ -1,0 +1,396 @@
+.header {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1.4rem;
+  padding-bottom: 1.6rem;
+  height: 100vh;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header-title {
+  font-family: sans-serif;
+  text-align: right;
+  letter-spacing: -.05em;
+  font-size: 5rem;
+}
+
+.header-title span {
+  color: #31fec8;
+}
+
+.header-title span svg {
+  margin-bottom: 10px;
+}
+
+.oh .header-span {
+  display: block;
+  text-align: right;
+  color: #bdbfc2;
+  font-size: 1rem;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+ul li {
+  display: list-item;
+  text-align: left;
+  color: #bdbfc2;
+}
+
+nav {
+  display: block;
+}
+
+nav .nav-link {
+  display: inline-table;
+  padding: 5px 0;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.nav-list .nav-link::after {
+  content: '';
+  display: block;
+  background-color: #31fec8;
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  margin-left: 50%;
+  -webkit-transition: width 0.3s, margin-left 0.3s;
+  transition: width 0.3s, margin-left 0.3s;
+}
+
+.nav-list .link:hover::after {
+  width: 100%;
+  margin-left: 0%;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99999;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+.card .card-body {
+  background-color: #fff;
+  color: black;
+  padding-left: 0;
+}
+
+.card .card-body a {
+  text-decoration: none;
+}
+
+.card .card-body a:hover {
+  color: #bdbfc2;
+}
+
+.card .card-img-top {
+  border-radius: 0;
+}
+
+.other-projects {
+  background-color: #eee;
+}
+
+.other-projects .card-body {
+  background-color: #eee;
+}
+
+.about .nav-link {
+  padding: 5px 0;
+  color: #bdbfc2;
+}
+
+.about .nav-link:hover {
+  color: black;
+}
+
+.about ul {
+  padding-top: 30px;
+}
+
+.contact {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact a {
+  text-decoration: none;
+  text-transform: none;
+  color: #bdbfc2;
+}
+
+.contact a:hover {
+  color: #fff;
+}
+
+.contact svg {
+  color: #31fec8;
+}
+
+footer {
+  padding-bottom: 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .nav-link {
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: inherit;
+}
+
+.summary {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.quarter {
+  height: 75vh;
+}
+
+.quarter a {
+  text-decoration: none;
+  color: #bdbfc2;
+}
+
+.quarter a:hover {
+  color: #fff;
+}
+
+.credits {
+  padding-top: 0;
+}
+
+.credits li {
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.images {
+  padding-top: 0;
+}
+
+.quarter .nav-link {
+  padding: 0;
+}
+
+hr {
+  border: 4px solid #31fec8;
+}
+
+.header-inner svg {
+  color: #31fec8;
+}
+
+#isl {
+  padding-top: 0;
+}
+
+#isl .card-body {
+  padding-top: 1.25rem;
+}
+
+#isl a {
+  color: black;
+}
+
+#isl a:hover {
+  color: #bdbfc2;
+  text-decoration: none;
+}
+
+#unicredit {
+  padding-top: 0;
+}
+
+#unicredit a {
+  color: black;
+}
+
+#unicredit a:hover {
+  color: #bdbfc2;
+  text-decoration: none;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .header-title {
+    font-size: 4rem;
+  }
+  #isl.card-body {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  #unicredit.card-body {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .about ul {
+    padding-bottom: 30px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .header-title {
+    font-size: 3rem;
+  }
+  .about ul {
+    padding-bottom: 30px;
+  }
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+  .other-projects .card-title {
+    font-size: 1.4rem;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  #isl.card-body {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  #unicredit.card-body {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .section-sub {
+    margin-top: .5rem;
+  }
+  .lead {
+    margin-top: 1rem;
+  }
+  .credits li {
+    font-size: 16px;
+  }
+  .contact h3 {
+    font-size: 20px;
+  }
+  .quarter h3 {
+    font-size: 24px;
+  }
+}
+
+/* Custom, iPhone Retina */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+}
+
+#my-scrollbar {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-family: sans-serif;
+  text-align: left;
+  letter-spacing: -.05em;
+  font-size: 4rem;
+}
+
+.section-sub {
+  font-family: sans-serif;
+  text-align: left;
+  letter-spacing: -.05em;
+  font-size: 3rem;
+}
+
+.spacer {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.contact .dash {
+  color: #31fec8;
+}
+/*# sourceMappingURL=style.css.map */

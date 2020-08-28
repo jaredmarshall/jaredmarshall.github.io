@@ -1,0 +1,15 @@
+.contact {
+    background-color: $primaryColor;
+    color: $secondaryText;
+    a {
+        text-decoration: none;
+        text-transform: none;
+        color: $accentText;
+        &:hover {
+            color: $secondaryText;
+        }
+    }
+    svg {
+        color: $accentColor;
+    }
+}

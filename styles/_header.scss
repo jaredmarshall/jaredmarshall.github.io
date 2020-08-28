@@ -1,0 +1,97 @@
+
+.header {
+    position: relative;
+    flex-direction: column;
+    padding-top: 1.4rem;
+    padding-bottom: 1.6rem;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primaryColor;
+    color: $secondaryText;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-title {
+    font-family: sans-serif;
+    text-align: right;
+    letter-spacing: -.05em;
+    font-size: 5rem;
+    span {
+        color: $accentColor;
+        svg {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.oh .header-span {
+    display: block;
+    text-align: right;
+    color: $accentText;
+    font-size: 1rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    list-style: none;
+    margin-bottom: 0;
+    li {
+        display: list-item;
+        text-align: left;
+        color: $accentText;
+    }
+}
+
+nav {
+    display: block;
+    .nav-link {
+        display: inline-table;
+        padding: 5px 0;
+    }
+}
+
+.link {
+    display: inline-block;
+    position: relative;
+    &:hover {
+        color: $secondaryText;
+    }
+}
+
+.nav-list .nav-link::after {
+    content: '';
+    display: block;
+    background-color: $accentColor;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    margin-left: 50%;
+    transition: width 0.3s, margin-left 0.3s;
+}
+
+.nav-list .link:hover::after {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99999;
+}

@@ -1,0 +1,12 @@
+
+.about .nav-link {
+    padding: 5px 0;
+    color: $accentText;
+    &:hover {
+        color: $primaryText;
+    }
+}
+
+.about ul {
+    padding-top: 30px;
+}

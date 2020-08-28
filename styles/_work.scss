@@ -1,0 +1,25 @@
+.card {
+    border-radius: 0;
+    border: none;
+    .card-body {
+        background-color: $secondaryColor;
+        color: $primaryText;
+        padding-left: 0;
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $accentText;
+            }
+        }
+    }
+    .card-img-top {
+        border-radius: 0;
+    }
+}
+
+.other-projects {
+    background-color: #eee;
+    .card-body {
+        background-color: #eee;
+    }
+} 
