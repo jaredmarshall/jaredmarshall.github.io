@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Founders Grotesk Light';
+  src: url('./fonts/FoundersGrotesk-Light.woff2') format('woff2'),
+      url('./fonts/FoundersGrotesk-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk Condensed Regular';
+  src: url('./fonts/FoundersGroteskCond-Reg.woff2') format('woff2'),
+      url('./fonts/FoundersGroteskCond-Reg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk Condensed Semibold';
+  src: url('./fonts/FoundersGroteskCond-SmBd.woff2') format('woff2'),
+      url('./fonts/FoundersGroteskCond-SmBd.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

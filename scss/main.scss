@@ -1,0 +1,13 @@
+// Variables
+$primaryColor: #FF3461;
+$secondaryColor: #FBCAD3;
+$accentColor: #BEFA46;
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+
+@import 'style';
+@import 'video';
+@import 'fonts';
+@import 'footer';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

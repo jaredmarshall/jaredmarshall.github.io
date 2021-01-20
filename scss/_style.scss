@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#fullpage {
+    width: 100%;
+    margin: auto; 
+}
+
+h1 {
+    line-height: 1.2;
+    font-family: Founders Grotesk Condensed Semibold;
+    text-transform: uppercase;
+    color: $primaryColor;
+}
+
+h2 {
+    line-height: 1.2;
+    font-family: Founders Grotesk Condensed Regular;
+    text-transform: uppercase;
+    color: $primaryColor;
+}
+  
+a {
+    font-family: Founders Grotesk Condensed Semibold;
+}
+
+.icon {
+    align-items: center;
+    width: 100px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    align-items: center;
+    width: 100px;
+}
+
+.logo-main {
+    position: fixed;
+    width: 200px;
+    left: 25px;
+    top: 25px;
+    z-index: 999;
+}
+
+/**
+Fixed button outside the fullpage.js wrapper
+*/
+#moveTo {
+    width: 60px;
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+}
